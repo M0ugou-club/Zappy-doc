@@ -22,9 +22,9 @@
         </span>
         <h2 class="h2 py-4"><b>Displaying</b></h2>
         <span>
-            The GUI is running in a loop that updates the display, FPS are limited to 60.<br/>
-            This loop is drawing all the elements of the game, the map, the players, the items, the animations, etc.<br/>
-            All of those elements have their own update function that is called by the loop.<br/>
+            The <b>GUI</b> is running in a <b>loop that updates the display</b>, <b>FPS</b> are limited to <b>60</b>.<br/>
+            This loop is drawing <b>all the elements of the game</b>, the map, the players, the items, the animations, etc.<br/>
+            All of those elements have <b>their own update function</b> that is <b>called by the loop</b>.<br/>
         </span>
         <h2 class="h2 py-4"><b>Map</b></h2>
         <span>
@@ -41,7 +41,8 @@
         </span>
         <h2 class="h2 py-4"><b>Players</b></h2>
         <span>
-            <i>Nothing for the moment</i>
+            <b>Players</b> are <b>3D models</b> that move and orient on the map from the server's instructions, they have the <b>color</b> of their <b>team</b> and can pick up items and lay eggs.<br/>
+            For <b>each levels</b>, players have a <b>different model</b>, a <b>levitation animation</b> is played when a player is doing a <b>ritual</b>.
         </span>
         <h2 class="h2 py-4"><b>Items</b></h2>
         <span>
