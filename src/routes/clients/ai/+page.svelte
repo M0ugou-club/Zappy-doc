@@ -1,6 +1,18 @@
-<h1 id="ai">AI</h1>
-<p>The AI is a program on its own where the main goal is to attain the lvl 8.</p>
-<h2 id="ai-functionment">AI functionment</h2>
+<div class="h-full m-8 flex">
+    <div class="space-y-5 h-[90%] w-full overflow-y-scroll">
+        <h1 class="h1 py-4"><b>AI</b></h1>
+        <span>
+            The AI is a program on its own where the main goal is to attain the lvl 8.
+        </span>
+        <hr class="!border-t-2">
+        <h2 id="h2 py-4">
+            <b>
+                AI functionment
+            </b>
+        </h2>
+        <span>
+            
+        </span>
 <ul>
 <li><strong>Connection</strong> to the server:<ol>
 <li>Connect to the server</li>
@@ -33,3 +45,5 @@ example of the message a player would receive: team1:chui;pret;mon;gars??2</li>
 </ol>
 </li>
 </ul>
+    </div>
+</div>
