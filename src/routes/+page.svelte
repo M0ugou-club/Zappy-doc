@@ -6,7 +6,35 @@
             a tile map containing resources. The winning team is the first one where at least 6 players reach the maximum elevation.<br/><br/>
             This documentation is written by the developers of the project and is intended to help new developers to join the project.
         </span>
-        <hr class="!border-t-2" />
-        <p>Detailed project explanation:</p>
+        <hr class="!border-t-2 pb-8" />
+        <span>
+            Each of the 3 programs composing this project can be launched with different parameters to customize its behavior:
+        </span>
+        <h3 class="h3">Server:</h3>
+        <span>
+            <ul class="list-disc pl-5">
+                <li><code class="code">-p port</code> Port the server will listen on.</li>
+                <li><code class="code">-x width</code> Width of the world.</li>
+                <li><code class="code">-y height</code> Height of the world.</li>
+                <li><code class="code">-n team1 team2 ...</code> Name of the teams.</li>
+                <li><code class="code">-c clientsNb</code> Initial number of authorized clients per team.</li>
+                <li><code class="code">-f freq</code> Frequency multiplicator of the game.</li>
+            </ul>
+        </span>
+        <h3 class="h3">AI:</h3>
+        <span>
+            <ul class="list-disc pl-5">
+                <li><code class="code">-n team</code> Name of the team.</li>
+                <li><code class="code">-h host</code> Address of the host.</li>
+                <li><code class="code">-p port</code> Port the host is listening on.</li>
+            </ul>
+        </span>
+        <h3 class="h3">GUI:</h3>
+        <span>
+            <ul class="list-disc pl-5">
+                <li><code class="code">-h host</code> Address of the host.</li>
+                <li><code class="code">-p port</code> Port the host is listening on.</li>
+            </ul>
+        </span>
     </div>
 </div>

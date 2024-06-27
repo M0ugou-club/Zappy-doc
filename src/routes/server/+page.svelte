@@ -14,9 +14,41 @@
         <span>
             Each time a client attempts to connect to the server, a new connection is created, this connection contains a character buffer, each time data is sent from the client to the server, it gets added to this buffer until a \n is found, the buffer is then interpreted by the server and execute its corresponding action if found.
         </span>
+        <h2 class="h2 py-4"><b>Connection</b></h2>
+        <span>
+            When a connection is established with the server, it initiates a <b>handshake</b>, it can branch into 2 different directions depending on the team the <b>client</b> is trying to join.
+        </span>
+        <h3 class="h3">AI:</h3>
+        <span>
+            <ul class="list-disc pl-5">
+                <li>{"<-"} WELCOME</li>
+                <li>{"->"} AI_TEAM</li>
+                <li>{"<-"}  CONNECTIONS_LEFT</li>
+                <li>{"<-"}  X Y</li>
+            </ul>
+        </span>
+        <h3 class="h3">GUI:</h3>
+        <span>
+            <ul class="list-disc pl-5">
+                <li>{"<-"} WELCOME</li>
+                <li>{"->"} GRAPHIC</li>
+                <li>{"<-"} MSZ</li>
+                <li>{"<-"} MCT</li>
+                <li>{"<-"} TNA</li>
+                <li>{"<-"} PNW (for each player already connected)</li>
+            </ul>
+        </span>
+        <br>
+        If the team name is invalid, the server will instantly reply with a <b>ko</b> followed by a newline and close the connection.
         <h1 class="h2 py-4"><b>Map</b></h1>
         <span>
-            <b>The map<b/> is simply an <b>array of cells</b> contained within the game structure.
+            <b>The map</b> is a <b>table of cells (2 dimensional array)</b> contained within the game structure. Each cell also contains a pointer to the cells at its 4 cardinal directions:
+            <ul class="list-disc pl-5">
+                <li>North (cell->north)</li>
+                <li>East (cell->east)</li>
+                <li>South (cell->south)</li>
+                <li>West (cell->west)</li>
+            </ul>
         </span>
         <h1 class="h2 py-4"><b>Cells</b></h1>
         <span>

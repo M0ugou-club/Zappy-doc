@@ -60,11 +60,7 @@
                 <svelte:fragment slot="lead"><Server /></svelte:fragment>
                 <span>Server</span>
             </AppRailAnchor>
-            <AppRailAnchor href="{base}/protocol" title="Protocol" selected={currentRoute.startsWith(base+"/protocol")} data-sveltekit-reload>
-                <svelte:fragment slot="lead"><Handshake /></svelte:fragment>
-                <span>Protocol</span>
-            </AppRailAnchor>
-            <AppRailAnchor href="{base}/clients" title="Clients" selected={currentRoute.startsWith(base+"/clients")} data-sveltekit-reload>
+            <AppRailAnchor href="{base}/clients/ai" title="Clients" selected={currentRoute.startsWith(base+"/clients")} data-sveltekit-reload>
                 <svelte:fragment slot="lead"><MonitorSmartphone /></svelte:fragment>
                 <span>Clients</span>
             </AppRailAnchor>
