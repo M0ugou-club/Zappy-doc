@@ -40,6 +40,9 @@
         </span>
         <br>
         If the team name is invalid, the server will instantly reply with a <b>ko</b> followed by a newline and close the connection.
+        <br>
+        <br>
+        Since the AI's actions are limited by a cooldown, a queue of 10 commands is provided as to <b>bufferize</b> its inputs, if the queue is full but the client still tries to send commands, this new command is ignored.
         <h1 class="h2 py-4"><b>Map</b></h1>
         <span>
             <b>The map</b> is a <b>table of cells (2 dimensional array)</b> contained within the game structure. Each cell also contains a pointer to the cells at its 4 cardinal directions:
