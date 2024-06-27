@@ -22,10 +22,10 @@
 </li>
 <li><p>The AI <strong>brain</strong></p>
 <ol>
-<li><p><img src="image1" alt="/algo1.webp">
+<li><p><img src="/algo1.webp" alt="/algo1.webp">
 Search item is a small algorytme, which will thanks to the vision of the player, will search where the requested item, the algorytme also manages the movement, so that the player finds and moves and takes directly the requested item.</p>
 </li>
-<li><p><img src="image2" alt="/algo1.webp"> *3: Check Requirements is a small algorithm that looks at the player&#39;s inventory and checks what he needs to perform an incantation, whether he is missing any resources or players with him.</p>
+<li><p><img src="/algo2.webp" alt="/algo2.webp"> *3: Check Requirements is a small algorithm that looks at the player&#39;s inventory and checks what he needs to perform an incantation, whether he is missing any resources or players with him.</p>
 </li>
 <li><p>Put Requirements, is a function that places all the items the player needs to cast an incantation on the ground.</p>
 </li>
