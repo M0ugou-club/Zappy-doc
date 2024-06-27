@@ -1,5 +1,5 @@
 <div class="h-full m-8 flex">
-    <div class="space-y-5 w-full">
+    <div class="space-y-5 h-[90%] w-full overflow-y-scroll">
         <h1 class="h1 py-4"><b>Server</b></h1>
         <span>
             The server part is responsible for managing connections between clients and the game. It is written in C and only uses the standard library.
@@ -16,11 +16,11 @@
         </span>
         <h1 class="h2 py-4"><b>Map</b></h1>
         <span>
-            The map is simply an array of cells contained within the game structure.
+            <b>The map<b/> is simply an <b>array of cells</b> contained within the game structure.
         </span>
         <h1 class="h2 py-4"><b>Cells</b></h1>
         <span>
-            The cells of the map are linked to each other by pointers: "NORTH/SOUTH/EAST/WEST".
+            <b>The cells</b> of the map are <b>linked</b> to each other <b>by pointers: "NORTH/SOUTH/EAST/WEST</b>".
             <br/>Each cell contains:
             <ul class="list-disc pl-5">
                 <li>an x position</li>
@@ -40,7 +40,7 @@
         </span>
         <h1 class="h2 py-4"><b>Players</b></h1>
         <span>
-            The players are contained in a linked list stored within the "game" structure. Each player has a multitude of information and data:
+            <b>The players</b> are contained in a <b>linked list</b> stored within the "game" structure. Each player has a multitude of information and data:
             <ul class="list-disc pl-5">
                 <li>such as an ID</li>
                 <li>a team name</li>
