@@ -23,8 +23,14 @@
         <h2 class="h2 py-4"><b>Displaying</b></h2>
         <span>
             The <b>GUI</b> is running in a <b>loop that updates the display</b>, <b>FPS</b> are limited to <b>60</b>.<br/>
-            This loop is drawing <b>all the elements of the game</b>, the map, the players, the items, the animations, etc.<br/>
+            This loop is handled by the Scenes and is drawing <b>all the elements of the game</b>, the map, the players, the items, the animations, etc.<br/>
             All of those elements have <b>their own update function</b> that is <b>called by the loop</b>.<br/>
+        </span>
+        <h2 class="h2 py-4"><b>Scenes</b></h2>
+        <span>
+            <b>Scenes</b> are the <b>different states</b> of the game, like the main menu and the game that are scenes.<br/>
+            It contains an <b>update function</b> that is called by the main loop that <b>call all the update functions</b> of the elements of the scene.<br/>
+            There are also a <b>load</b>, <b>unload</b> that are called when the scene is loaded or unloaded. A <b>closeWindow function</b> for closing the window and a <b>shouldClose function</b> that return a boolean to know if the window should be closed. (for exemple when the user click on the close button of the window)<br/>
         </span>
         <h2 class="h2 py-4"><b>Map</b></h2>
         <span>
@@ -55,6 +61,12 @@
             The <b>Broadcast</b> is represented like a Minecraft chat at the bottom left of the screen. It also displays other information like the available teams or a welcome message. The messages broadcasted are sent by the <b>server</b> and are displayed in real time.<br/>
             When a message is coming, <b>RayLib Texts</b> are created containing the message, and a semi-transparent black rectangle rendered before the text to make it readable against the background. All of this is <b>encapsulated</b> in a class that has an update function that is called by the main update loop to be rendered each frame.<br/>
             Each message has its own <b>life timer</b>, when it reaches 0, another timer starts to <b>fade the message out</b>. It is then deleted from the list of messages to be displayed.
+        </span>
+        <h2 class="h2 py-4"><b>Networking</b></h2>
+        <span>
+            <b>The comunication with the server</b> is done with <b>TCP</b> sockets. The connection is <b>in a separate thread</b> and the <b>messages added in a shared queue</b> that is read by the main thread.<br/>
+            Messages are read and the action is selected using <b>regex</b>. The message is then parsed and the action is done.<br/>
+            The GUI will <b>never send anything</b> to the server, except at the connection, the GUI will <b>send "GRAPHIC"</b> to let the server know that it is a graphical client.
         </span>
     </div>
 </div>
