@@ -15,7 +15,7 @@
             </ul>
         </span>
     <h1 class="h1 py-4"><b>The AI brain</b></h1>
-<p><img src="/algo1.webp" alt="/algo1.webp">
+<p><img src="../algo1.webp" alt="../algo1.webp">
 <span>
         <i><b>1*:</b>
             Search item is a small algorytme, which will thanks to the vision of the player,
