@@ -26,7 +26,7 @@
 </span>
 </p>
 <p><i><b>2*:</b></i></p>
-<img src="/algo2.webp" alt="/algo2.webp">
+<img src="../algo2.webp" alt="../algo2.webp">
 <p>
     <span>
         <i><b>3*:</b>Check Requirements is a small algorithm that looks at the player&#39;s inventory and checks what he needs to perform an incantation, <br/>
